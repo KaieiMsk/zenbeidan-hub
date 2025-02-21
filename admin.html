@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface - Speaker List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>〇〇会議</h1>
+
+    <!-- Admin Interface -->
+    <div id="admin-interface">
+        <h2>Admin Interface</h2>
+        <label for="country-crossout-select">Select Country to Cross Out:</label>
+        <select id="country-crossout-select">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="France">France</option>
+            <option value="China">China</option>
+            <option value="Russia">Russia</option>
+            <option value="Japan">Japan</option>
+            <!-- Add more countries as needed -->
+        </select>
+        <button id="crossout-speaker">Cross Out Speaker</button>
+        <button id="crossout-next-speaker">Cross Out Next Speaker</button>
+        <button id="reset-speaker-list">Reset Speaker List</button>
+    </div>
+
+    <div id="current-speakers" class="admin-section">
+        <h2>Current Speakers</h2>
+        <ul id="speaker-list">
+            <!-- Speakers will be added here -->
+        </ul>
+    </div>
+
+    <!-- Notes from Countries -->
+    <div id="note-to-admin" class="admin-section">
+        <h2>Notes from Delegations</h2>
+        <ul id="notes-list">
+            <!-- Notes will be displayed here -->
+        </ul>
+        <button id="clear-notes">Clear Notes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
